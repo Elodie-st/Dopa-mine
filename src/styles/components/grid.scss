@@ -6,7 +6,7 @@
     margin: 48px;
 }
 
-.grid2 {
+.grid2, .grid3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: $size-titre-tel;
@@ -14,7 +14,12 @@
   justify-items: center;
   align-items: center;
 }
-
+.gridC{
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  margin: 48px;
+}
 @media (min-width: 600px) {
   .grid__app, .grid {
     display: grid;
@@ -22,7 +27,7 @@
     align-items: center;
     margin: $size-med-tab;
   }
-  .grid2 {
+  .grid2, .grid3, .gridC {
     margin: $size-med-tab;
     gap:$size-text-tab;
   }
@@ -39,6 +44,7 @@
     .grid > *{
       grid-column: 1 / -1;
     }
+
     // .div1 { grid-area: 2 / 2 / 3 / 5; }
     // .div2 { grid-area: 4 / 3 / 5 / 4; }
     // .div3 { grid-area: 3 / 3 / 4 / 4; }
@@ -92,6 +98,22 @@
       }
       .grid__3_6{
         grid-column: -3/ 3;
+      }      
+
+      .grid3, .gridC{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: $size-titre-pc;
+        gap:$size-text-pc;
+        justify-items: center;
+        align-items: center;
+      }
+      .gird__copyryt--texte{
+        grid-column: 1/-2;
+        justify-self: start;
+      }
+      .dop__btn--credit{
+        grid-column: -2/-1;
       }
 }
 

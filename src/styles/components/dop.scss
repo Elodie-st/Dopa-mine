@@ -8,7 +8,11 @@
     margin-left: auto;
     display: flex;
     border: none;
-  
+    &:hover{
+      color: $c-text;
+      transform: scale(1.5);
+      transition: transform 0.2s ease;
+    }
   }
   
   .contenu__dop, .contenu__sport{

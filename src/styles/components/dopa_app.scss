@@ -50,6 +50,9 @@
 .app__icone--dessin{
     width: 48vw;
 }
+.tab__nav{
+    display: none;
+}
 @media (min-width: 600px) {
     .app__image{
         width: 65vw;
@@ -119,9 +122,15 @@
         width: $size-titre-pc;
         height: $size-titre-pc;
         padding: 10px;
+        &:hover{
+            filter: brightness(1.7);
+        }
     }
     .tab__el--active a{
-        color: rgb(241, 255, 240);
+        filter: brightness(0.4);
+        img{
+            transform: scale(1.5);
+        }
     }
     
     .explication__donne{

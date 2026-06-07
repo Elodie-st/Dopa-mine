@@ -19,6 +19,10 @@
     text-align: left;
     .fa-arrow-right, .fa-arrow-left{
       font-size: $size-soustitre-tel;
+      &:hover{
+        transform: scale(1.5) translateX(-12px);
+        transition: transform 0.2s ease;
+      }
     }
   
   }
@@ -30,9 +34,21 @@
   padding: 0 $size-titre-tel;
   }
 @media (min-width: 500px) {
+  .premices::before{
+    content:"";
+    background-position: center;
+  }
   .dop__btn{
     .fa-arrow-right, .fa-arrow-left{
       font-size: $size-titre-tab;
+    }
+    
+  }
+}
+@media (min-width: 900px) {
+  .dop__btn{
+    .fa-arrow-right, .fa-arrow-left{
+      font-size: $size-titre-pc;
     }
     
   }

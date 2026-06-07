@@ -56,46 +56,78 @@
     text-align: center;
     color: $c-bleuclaire;
 }
-@media (min-width: 600px) {
+.dop__btn--credit{
+    display: inline-flex;
+    align-items:center;
+    gap: 11px;
+    text-decoration: none;
+    .accueil__sub--credit{
+        color: $c-bleuclaire;
+        margin: 0;
+    }
+}
+.credit__lien {
+    display: flex;
+    align-items: center;
+}
+.caddre__btn{
+    background-color: #40575C;
+    color: #9AD2D9;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid  #9AD2D9;
+    text-decoration: none;
+    z-index: 10;
+    margin-left: 13px;
+    &:hover{
+        color: $c-text;
+        border: 2px solid  $c-text;
+        transform: translate(12px);
+        transition: transform 0.2s ease;
+    }
+}
 
+@media (min-width: 600px) {
+    .accueil__img{
+        height: 45vh;
+    }
+    .dop__title--accueil{
+        padding: $size-titre-tab 0 0 0;
+    }
+    .dop__texte--accueil{
+        right: 0;
+        width: 55vw;
+        padding: $size-text-tab $size-titre-tab $size-text-tab 0;
+    }
+    .accueil__btn{
+        height: 135px;
+        width: 135px;
+        margin: clamp(0px, 3vw, $size-soustitre-tab);
+    }
+    .accueil__image{
+        height: $size-med-tab;
+        width: $size-med-tab;
+        padding: 18px;
+    }
 }
 @media (min-width: 900px) {
     .accueil__img{
-        width:  auto;
-        height: 45vh;//
-        position: relative;
-        z-index: -1;
-        background-image: url("../assets/images/image_aceuille.png");
-        background-size: cover;
-      //  background-position: center 80%;
-        background-position: top;
-        background-repeat: no-repeat;
+        height: 49vh;
     }
     .dop__title--accueil{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 ;//
         padding: $size-titre-pc 0 0 0;
-        color: $c-bleufoncer;
     }
     .dop__texte--accueil{
-        position: absolute;
         right: 0;
-       // justify-content: right;
         width: 55vw;
         padding: $size-text-pc $size-titre-pc $size-text-pc 0;
     }
     .accueil__btn{
-        display: flex;
-        height: 135px;//
-        width: 135px;//
-        border: 3px solid $c-bleuclaire;
-        border-radius: 10px;
+        height: 135px;
+        width: 135px;
         margin: clamp(0px, 3vw, $size-soustitre-pc);
     }
     .accueil__btn:active{
-        border: 3px solid $c-bleufoncer;
         fill: $c-bleufoncer;
         .accueil__image{
             filter: brightness(0.4);
@@ -105,9 +137,5 @@
         height: $size-med-pc;
         width: $size-med-pc;
         padding: $size-lien-pc;
-    }
-    .accueil__sub{
-        text-align: center;
-        color: $c-bleuclaire;
     }
 }

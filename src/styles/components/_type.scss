@@ -21,6 +21,9 @@ h2{
   color: $c-text;
   font-size: $size-soustitre-tel;
 }
+h3{
+  margin: 0 0  $size-soustitre-tel 0;
+}
 input{
   width: 100%;
   box-sizing: border-box;
@@ -33,6 +36,9 @@ input{
     color: $c-bleufoncer;
   }
 }
+.coeur__subtitle--nomarg{
+  margin: 0;
+}
 @media (min-width: 600px) {
   body {
     font-size: $size-text-tab;
@@ -43,11 +49,15 @@ input{
   h2{
     font-size: $size-soustitre-tab;
   }
+  h3{
+    margin: 0 0  $size-soustitre-tab 0;
+  }
   input{
     padding: $size-lien-tab 0 $size-lien-tab $size-lien-tab;
     margin: $size-titre-tab 0  $size-text-tab 0;
     border-radius: $size-lien-tab;
   }
+
 }
 @media (min-width: 900px) {
   body {
@@ -58,6 +68,9 @@ input{
   }
   h2{
     font-size: clamp(36px , 6vw + 1.5rem, 67px);
+  }
+  h3{
+    margin: 0 0  $size-soustitre-pc 0;
   }
   input{
     padding: $size-lien-pc 0 $size-lien-pc $size-lien-pc;
