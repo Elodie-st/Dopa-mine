@@ -1,0 +1,67 @@
+html{
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  font-size: $size-text-tel;
+  line-height: 1.5;
+  color: $c-text;
+  background-color: $c-bac;
+  margin: 0;
+  padding: 0;
+}
+h1{
+  font-family: $font-titre;
+  color: $c-text;
+  font-size: clamp(0.5rem, 10vw, $size-titre-tel);
+}
+h2{
+  font-family: $font-titre;
+  color: $c-text;
+  font-size: $size-soustitre-tel;
+}
+input{
+  width: 100%;
+  box-sizing: border-box;
+  padding: $size-lien-tel 0 $size-lien-tel $size-lien-tel;
+  margin: $size-titre-tel 0  $size-text-tel 0;
+  background-color: $c-text;
+  border: none;
+  border-radius: $size-lien-tel;
+  ::placeholder{
+    color: $c-bleufoncer;
+  }
+}
+@media (min-width: 600px) {
+  body {
+    font-size: $size-text-tab;
+  }
+  h1{
+    font-size: clamp(0.5rem, 10vw, $size-titre-tab);
+  }
+  h2{
+    font-size: $size-soustitre-tab;
+  }
+  input{
+    padding: $size-lien-tab 0 $size-lien-tab $size-lien-tab;
+    margin: $size-titre-tab 0  $size-text-tab 0;
+    border-radius: $size-lien-tab;
+  }
+}
+@media (min-width: 900px) {
+  body {
+    font-size: $size-text-pc;
+  }
+  h1{
+    font-size: clamp(67px , 6vw + 1.5rem, 120px);
+  }
+  h2{
+    font-size: clamp(36px , 6vw + 1.5rem, 67px);
+  }
+  input{
+    padding: $size-lien-pc 0 $size-lien-pc $size-lien-pc;
+    margin: $size-titre-pc 0  $size-text-pc 0;
+    border-radius: $size-lien-pc;
+  }
+}

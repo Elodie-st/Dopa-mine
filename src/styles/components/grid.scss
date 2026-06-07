@@ -1,0 +1,101 @@
+
+ .grid__app, .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin: 48px;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: $size-titre-tel;
+  gap:$size-text-tel;
+  justify-items: center;
+  align-items: center;
+}
+
+@media (min-width: 600px) {
+  .grid__app, .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    margin: $size-med-tab;
+  }
+  .grid2 {
+    margin: $size-med-tab;
+    gap:$size-text-tab;
+  }
+}
+
+
+@media (min-width: 900px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr 2fr 1fr;
+    //grid-template-rows: repeat(6, 1fr);
+    margin: 0 $size-med-pc 0 $size-med-pc;
+    }
+    .grid > *{
+      grid-column: 1 / -1;
+    }
+    // .div1 { grid-area: 2 / 2 / 3 / 5; }
+    // .div2 { grid-area: 4 / 3 / 5 / 4; }
+    // .div3 { grid-area: 3 / 3 / 4 / 4; }
+    // .div4 { grid-area: 6 / 3 / 7 / 4; }  
+    .grid__titre{
+      grid-column: 2 / -1; 
+    }
+    .dop__btn{
+      grid-column: 1 / 2; 
+    }
+    .grid2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin: $size-titre-pc;
+      gap:$size-text-pc;
+      justify-items: center;
+      align-items: center;
+    }
+    .grid__centre{
+      grid-column: 2 / -2;  
+    }  
+
+    //grid app
+    .grid__app {
+      display: grid;
+      grid-template-columns: 1fr 1fr 2fr 2fr 2fr 1fr 1fr;
+      gap: 1rem;
+      margin: $size-med-pc;
+      }
+      .grid__app > *{
+        grid-column: 1 / -1;
+      }
+      .grid__tabs{
+        grid-column: 2 / -3;
+      }
+      .grid__silde{
+        grid-column: 3 / -3;
+      }
+      //sport
+      .grid__2_5{
+        grid-column: 2 / -4;
+      }
+      .grid__5_8{
+        grid-column: 5/ -1;
+      }
+      .grid__1_4{
+        grid-column: 1/ -5;
+      }
+      .grid__2_7{
+        grid-column: 4/ -2;
+      }
+      .grid__3_6{
+        grid-column: -3/ 3;
+      }
+}
+
+
+
+
+

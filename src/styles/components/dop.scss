@@ -1,0 +1,36 @@
+
+  .btnFermer{
+    font-size: 28px;
+    background-color: transparent;
+    color: $c-bleuclaire;
+    box-shadow: none;
+    border-radius: 0px;
+    margin-left: auto;
+    display: flex;
+    border: none;
+  
+  }
+  
+  .contenu__dop, .contenu__sport{
+    display: none;
+  }
+  //l'espace entre contenu__dop et active c'est pour m'abattre
+  .contenu__dop.active, .contenu__sport.active{
+    display: block;
+    position: fixed;
+    background-color: $c-bleufoncer;
+    border: 3px solid $c-bleuclaire;
+    border-radius: 10px;
+    padding: $size-text-tel;
+    top: 38%;
+    left: $size-titre-tel;
+    right: $size-titre-tel;
+    z-index: 10; 
+  }
+@media (min-width: 500px) {
+  .contenu__dop.active, .contenu__sport.active{
+    padding: $size-soustitre-tab;
+    left: $size-med-tab;
+    right: $size-med-tab;
+  }
+}

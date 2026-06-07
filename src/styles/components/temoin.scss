@@ -1,0 +1,22 @@
+.lien__sitation{
+    color: $c-bleuclaire;
+    text-decoration: none;
+    font-style: italic;
+}
+.backToTop{
+    position: fixed;
+    right: $size-titre-tel;
+    bottom: 20px;
+    display: none;
+    background-color: #40575C;
+    color: #9AD2D9;
+    padding: $size-lien-tel;
+    border-radius: 16px;
+    border: 2px solid  #9AD2D9;
+    text-decoration: none;
+    z-index: 10;
+}
+
+.backToTop--show{
+    display: inline;
+}

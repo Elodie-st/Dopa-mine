@@ -1,0 +1,39 @@
+.premices::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    z-index: -1;
+    background-image: url("../assets/images/fond.png");
+    background-size: cover;
+    //background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+  }
+  .dop__title {
+    text-align: center;
+  }
+  .dop__btn{
+    background-color: transparent;
+    color: $c-text;
+    border: none;
+    text-align: left;
+    .fa-arrow-right, .fa-arrow-left{
+      font-size: $size-soustitre-tel;
+    }
+  
+  }
+  .dop__phrase{
+  position: fixed;
+  bottom: $size-soustitre-tel;
+  left: 0;
+  right: 0;
+  padding: 0 $size-titre-tel;
+  }
+@media (min-width: 500px) {
+  .dop__btn{
+    .fa-arrow-right, .fa-arrow-left{
+      font-size: $size-titre-tab;
+    }
+    
+  }
+}

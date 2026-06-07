@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <title>Elodie Somerlinck - Dopa-mine - Application</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Meta Partage -->
+  <meta property="og:site_name" content="Dopa-mine">
+  <meta property="og:title" content="Accueil">
+  <meta property="og:type" content="website">
+  <!-- <meta property="og:url" content="http://www.elodiesomer.be/projets/codekite/"> -->
+  <meta property="og:image" content="https://www.elodiesomer.be/assets/image_meta.jpeg">
+  <meta property="og:image:width" content="1800">
+  <meta property="og:image:height" content="932">
+  <meta property="og:description" content="site web sur les produits dopants">
+  <meta property="og:author" content="Elodie Somerlinck">
+
+  <!-- Favicon -->
+  <!-- <link rel="icon" href="assets/images/favicon.ico" type="images/ico"> -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Faster+One&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  <!-- un truc pour trouver des icone-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+  <link rel="stylesheet" href="styles/app.css">
+
+  <script src="scripts/app.js" defer></script>
+</head>
+<body class="application">
+  <main>
+    <div class="">
+      <div id="top">
+        <a class="backToTop" href="#top">Back to top</a>
+      </div>
+        <section class="grid">
+        <a href="accueil.html" class="dop__btn dop__btn--chek" id=""><i class="fa fa-arrow-left"></i></a>
+        <h1 class="dop__title accueil__title--coeur grid__titre">Dopa- Mine</h1>
+        </section>
+        <section class="explic__app explic__app--Mokuptel">
+          <h2 class="dop__title coeur__subtitle coeur__subtitle--Mokuptel">Dopa-app</h2>
+          <p>Dopa-App sera une application mobile qui suivra votre état de santé. Compatible avec les montres connectées, elle mesurera votre fréquence cardiaque, votre temps de sommeil ainsi que votre temps d'écran. Elle vous accompagnera également dans votre pratique sportive et vous rappellera quand prendre votre traitement ou quand l’arrêter.</p>
+          <img class="app__image app__image--Mokuptel" src="assets/images/app_mokup.png" srcset="assets/images/app_mokup@2x.png" alt="telephone qui montre l'application de suivi dopa-app">
+        </section>
+        <section class="grid__app tab">
+
+          <ul class="tab__nav grid__silde">
+            <li class="tab__el tab__el--active"><a href="#tab1"><img src="assets/images/coeur_bleu.svg" alt="Bouton pour l'explication de la fréquence cardiaque"></a></li>
+            <li class="tab__el"><a href="#tab2"><img src="assets/images/ecrant.svg" alt="Bouton pour l'explication du temps de someil"></a></li>
+            <li class="tab__el"><a href="#tab3"><img src="assets/images/nuit_bleuclaire.svg" alt="Bouton pour l'explication du temps de someil"></a></li>
+            <li class="tab__el"><a href="#tab4"><img src="assets/images/bouger.svg" alt="Bouton pour l'explication du temps de someil"></a></li>
+          </ul>
+
+          <div class="explication__donne explication__donne--active grid__tabs" id="tab1">
+            <img class="app__icone" src="assets/images/app_coeur_watch.png" srcset="assets/images/app_coeur_watch@2x.png" alt="dopa-app psuvi de la frecance cardiaque sur une montre conecté">
+              <div class="explication__texte">
+                <h3 class="coeur__subtitle">fréquence cardiaque</h3>
+                <p>La fréquence cardiaque sera mesurée via votre téléphone ou votre montre connectée. Comme celle-ci peut augmenter ou diminuer avec la prise de stimulants, cela permettra à l’application de s’adapter en fonction de vos besoins et de vous proposer un suivi personnalisé.</p>
+              </div>
+          </div>
+          <div class="explication__donne grid__tabs" id="tab2">
+            <img class="app__icone app__icone--dessin" src="assets/images/ecrant.svg" alt="icone d'écrant">
+            <div class="explication__texte">
+              <h3 class="coeur__subtitle">Temps d'écran</h3>
+              <p>L’application vous indiquera quand faire des pauses dans votre travail ou quand vous devrez vous déconnecter des réseaux sociaux. Vous pourrez synchroniser votre téléphone et vos appareils numériques pour différencier votre temps de travail et votre temps d’écran sur les réseaux.</p>
+            </div>
+          </div> 
+          <div class="explication__donne grid__tabs" id="tab3">
+            <img class="app__icone" src="assets/images/app_nuit_watch.png" srcset="assets/images/app_nuit_watch@2x.png" alt="dopa-app psuvi du temps de someil sur une montre conecté">
+            <div class="explication__texte">
+              <h3 class="coeur__subtitle">heures de sommeil</h3>
+              <p>Le temps de sommeil sera mesuré avec votre téléphone grâce aux capteurs audio ou via votre montre connectée. Le sommeil varie d’une personne à l’autre, mais l’insomnie ou l’hypersomnie peuvent être liées à la prise de stimulants. C’est pourquoi l’application suivra votre état de santé, afin d’adapter la prise de stimulants en fonction de vos besoins réels.</p>
+            </div>
+          </div>
+          <div class="explication__donne grid__tabs" id="tab4">
+            <img class="app__icone app__icone--dessin" src="assets/images/bouger.svg" alt="icone de bouger coureur">
+            <div class="explication__texte">
+              <h3 class="coeur__subtitle">Sport</h3>
+              <p>Dans la partie sport, vous pourrez sélectionner votre activité. L’application vous indiquera votre distance parcourue, calculera vos calories brûlées et proposera un minuteur pour vos séries. En fonction du sport choisi, l’app vous suggérera des stimulants pour être au top de vos performances.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="grid explic__app">
+          <div>
+            <h3 class="coeur__subtitle">Suivi</h3>
+            <p>Toutes les données cumulées permettront à l’application de vous aiguiller au mieux dans la prise de vos stimulants et de s'adapter à vos besoins. Vous pourrez retrouver ces produits en pharmacie et ils seront remboursés par la mutuelle.</p>
+          </div>
+        </section>
+    </div>
+  </main>
+</body>
+</html>
