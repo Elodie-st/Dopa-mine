@@ -90,6 +90,7 @@
 @media (min-width: 600px) {
     .accueil__img{
         height: 45vh;
+        background-position: center 70%;
     }
     .dop__title--accueil{
         padding: $size-titre-tab 0 0 0;
@@ -113,6 +114,7 @@
 @media (min-width: 900px) {
     .accueil__img{
         height: 49vh;
+        background-position: center 40%;
     }
     .dop__title--accueil{
         padding: $size-titre-pc 0 0 0;
